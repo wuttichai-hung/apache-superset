@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  superset:
+    image: superset
+    container_name: superset
+    restart: on-failure
+    # environment: 
+    #   - SUPERSET_CONFIG_PATH=/usr/local/lib/python3.8/site-packages/superset/superset_config.py
+    # volumes:
+    #   - ./volumes/superset/superset_config.py:/usr/local/lib/python3.8/site-packages/superset/superset_config.py
+    ports:
+      - 8088:8088
+#     networks: 
+#       - datahungry
+# networks: 
+#   datahungry_network:
+#     external: true
+#     name: datahungry_network
+
