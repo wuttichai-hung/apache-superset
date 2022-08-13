@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 superset db upgrade
 # superset fab create-admin

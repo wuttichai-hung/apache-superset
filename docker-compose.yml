@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   superset:
-    image: superset
+    # image: superset
+    build: ./
     container_name: superset
     restart: on-failure
     # environment: 
